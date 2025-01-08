@@ -22,23 +22,34 @@ Metode get_data: Mengambil daftar mahasiswa.
 
 # Kelas MahasiswaView:
 
+Berikut adalah implementasi kelas `MahasiswaView` untuk menampilkan daftar mahasiswa:
 
 
 class MahasiswaView:
-    @staticmethod
-    def tampilkan_list(daftar_mahasiswa):
-        """Menampilkan list data mahasiswa dalam format tabel."""
-        if not daftar_mahasiswa:
-            print("Tidak ada data mahasiswa.")
-            return
-        print("+-------------------+-------+")
-        print("|       Nama        | Nilai |")
-        print("+-------------------+-------+")
-        for mhs in daftar_mahasiswa:
-            print(f"| {mhs['nama']: <15} | {mhs['nilai']: <5} |")
-        print("+-------------------+-------+")
 
+@staticmethod
 
+def tampilkan_list(daftar_mahasiswa):
+
+"""Menampilkan list data mahasiswa dalam format tabel."""
+
+if not daftar_mahasiswa:
+
+print("Tidak ada data mahasiswa.")
+
+return
+
+print("+-------------------+-------+")
+
+print("| Nama | Nilai |")
+
+print("+-------------------+-------+")
+
+for mhs in daftar_mahasiswa:
+
+print(f"| {mhs['nama']: <15} | {mhs['nilai']: <5} |")
+
+print("+-------------------+-------+") 
 
 
 Menampilkan daftar mahasiswa dalam format tabel.
