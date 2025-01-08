@@ -1,10 +1,18 @@
 # UAS
 Kelas DataMahasiswa:
 
+# Kelas untuk merepresentasikan data mahasiswa
+class DataMahasiswa:
+    def __init__(self):
+        self.daftar_mahasiswa = []
 
+    def tambah(self, nama, nilai):
+        """Menambah data mahasiswa."""
+        self.daftar_mahasiswa.append({'nama': nama, 'nilai': nilai})
 
-
-
+    def get_data(self):
+        """Mengembalikan daftar mahasiswa."""
+        return self.daftar_mahasiswa
 
 Menyimpan data mahasiswa dalam list.
 
@@ -13,6 +21,13 @@ Metode tambah: Menambahkan mahasiswa ke dalam list.
 Metode get_data: Mengambil daftar mahasiswa.
 
 Kelas MahasiswaView:
+
+
+
+
+
+
+
 
 
 
