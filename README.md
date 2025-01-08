@@ -21,7 +21,8 @@ Metode tambah: Menambahkan mahasiswa ke dalam list.
 Metode get_data: Mengambil daftar mahasiswa.
 
 # Kelas MahasiswaView:
-Kelas untuk menampilkan data mahasiswa
+
+
 
 class MahasiswaView:
     @staticmethod
@@ -30,10 +31,15 @@ class MahasiswaView:
         if not daftar_mahasiswa:
             print("Tidak ada data mahasiswa.")
             return
-        print("Nama           | Nilai")
-        print("------------------------")
+        print("+-------------------+-------+")
+        print("|       Nama        | Nilai |")
+        print("+-------------------+-------+")
         for mhs in daftar_mahasiswa:
-            print(f"{mhs['nama']: <15} | {mhs['nilai']: <5}")
+            print(f"| {mhs['nama']: <15} | {mhs['nilai']: <5} |")
+        print("+-------------------+-------+")
+
+
+
 
 Menampilkan daftar mahasiswa dalam format tabel.
 
